@@ -1,0 +1,6 @@
+country,countryCode,yearPeriod,yearPeriodCode,educationLevel,educationLevelCode,family,friends,leisure,work,politics,religion
+China,CHN,2010-2014,YR2010-2014,1,NONE,99.6,88.7,59.9,60.5,33.1,28.4
+China,CHN,2010-2014,YR2010-2014,2,PRM,99.1,90.7,66.4,81.3,38,13.5
+China,CHN,2010-2014,YR2010-2014,3,SECTECH,99.6,92,70.3,84.4,41.7,10.6
+China,CHN,2010-2014,YR2010-2014,4,SECUNIPRE,99.2,95.2,81.4,85.2,44.6,7.7
+China,CHN,2010-2014,YR2010-2014,5,UNI,99.7,97.9,86.7,88.8,48.3,12
