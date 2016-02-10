@@ -25,3 +25,9 @@ Next, to show off your skills to your new bosses, you decide to combine WVS data
 Your boss asks you to create and document (text and images) a new analytic trail that goes deeper into your research questions.
 
 You decide to create a URL (webpage with a permanent link) with the running d3 code, images, and text describing your research questions, the two analytic trails, the results, and your learning in under 300 words. 
+
+____________________________________
+
+Code Reference:
+
+Object constancy with multiple sets of time-series: http://bl.ocks.org/nsonnad/4175202
