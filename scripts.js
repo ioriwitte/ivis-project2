@@ -125,7 +125,8 @@ function redraw() {
     
     // draw the lines and color them according to their names
     categoryEnter.append("path")
-      .attr("class", "line")
+      .attr("fill", "none")
+      .attr('stroke-width', 5)
       .attr("d", function(d) { return line(d.values); })
       .style("stroke", function(d) { return color(d.name); });
 

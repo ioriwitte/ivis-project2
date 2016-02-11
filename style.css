@@ -17,7 +17,7 @@ body {
 
 .line {
   fill: none;
-  stroke-width: 7px;
+/*  stroke-width: 7px;*/
 }
 
 .category {opacity: 0.3;}
