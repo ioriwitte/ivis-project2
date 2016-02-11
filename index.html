@@ -15,7 +15,7 @@
         <div class="col-md-2"> </div>
         <div class="col-md-8"> 
             <h1>How does Education Influence Values of Chinese in recent years?</h1>
-            <p>This graph demostrates how do people think different values are important in their life.</p>
+            <p>This graph demostrates how do people in China think different values are important in their lives from 1995 to 2014 with a keep growing total GDP.</p>
         </div>
         <div class="col-md-2"> </div>
       </div>
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-md-2"> </div>
         <div class="col-md-8" style="text-align: center">
-           <h4>Percentage of People who think X is important in their life</h4>
+           <h4>Percentage of People who Think "X" is Important in Their Lives x Highest Education Attained</h4>
         </div>
         <div class="col-md-2"> </div>
     </div>
@@ -60,10 +60,6 @@
     <div class="row">
       <div class="col-md-2"> </div>
       <div class="col-md-8" >
-        <div style="text-align: center">
-            <h4>Highest Education Attained</h4>
-            <br/>
-        </div>
         <div class="row">
             <div class="col-md-2"> </div>
             <div class="col-md-8" >
@@ -94,7 +90,7 @@
             <br/>
 
             <h3>Data processing</h3>
-            <p>Process the data from WVS, get the data of different "Highest Educations Attained" and the data of how are different values important in life for Chinese. Show percentages of column exluding DK/NA.</p>
+            <p>Process the data from WVS, get the data of different "Highest Educations Attained" and the data of how are different values important in life for Chinese in the year period of 2010-2014. Show percentages of column exluding DK/NA.</p>
             <div style="text-align: center">
                 <img src="images/data_family.png" style="width:500px;">
             </div>
@@ -116,7 +112,7 @@
             <h3>Insights</h3>
             <p>1.  Chinese values family and friends very much no matter what education he/she attained.</p>
             <p>2.  The higher education one attained, the more he/she will think work, leisure time and politics are important.</p>
-            <p>3.  The lower education one attained, the more he/she will think religion is important.
+            <p>3.  The lower education one attained, the more he/she will think religion is important.</p>
             <br/>
             <br/>
 
@@ -124,6 +120,50 @@
             <p>1.  Cannot view data of different values in one graph.</p>
             <p>2.  Cannot compare the data within different years in one graph.</p>
             <p>3.  The axis is not updated dynamically based on the data in the histogram graph.</p>
+            <br/>
+            <hr/>
+         </div>
+    </div>
+
+        <!-- trail 2 -->
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h2>Analytic Trail 2</h2>
+            <br/>
+
+            <h3>Data processing</h3>
+            <p>Get the data of different "Highest Educations Attained" and the data of how are different values important in life for Chinese in the year period from 1995 to 2014. Sum up the percentages of “Very important” and “Rather important” for one kind of value within one education level. The result is shown below.</p>
+            <div style="text-align: center">
+                <img src="images/data_2010_2014_China.png" style="width:600px;">
+            </div>
+            <div style="text-align: center">
+                (take 2010-2014 as an example)
+            </div>
+            <p>Take the data of <a href="https://docs.google.com/spreadsheets/d/16rpYapnUDKQXJIdUT_QWuuYH83dLBgbFQC3GfRO8OQY/pub?gid=0">Total GDP (PPP$, inflation-adjusted) for China from Gapminder</a> . Calculate the average number of the periods 1995-1999, 2000-2004, 2005-2009, 2010-2014.</p>
+            <br/>
+
+            <h3>Visual mapping and visual structure</h3>
+            <p>Map the data into lines with markers on a 2D graph with different colors indicating different values.</p>
+            <div style="text-align: center">
+                <img src="images/Graph_2010_2014_China.png" style="width:600px;">
+            </div>
+            <div style="text-align: center">
+                (take 2010-2014 as an example)
+            </div>
+            <p>Map the average GDP into the width of the lines.</p>
+            <p>The data of different year periods if showed by selecting the dropdown menu.</p>
+            <br/>
+
+            <h3>View transformations</h3>
+            <p>Use D3.js to show the animated transition of data within two year periods.</p>
+            <br/>
+
+            <h3>Insights</h3>
+            <p>1.  With time advancing, people show a decreased focus on politics.</p>
+            <p>2.  With time advancing, people show a increased focus on leisure time and friends. </p>
+            <p>3.  Chinese people cares about families and friends very much all the time regardless their education levels.</p>
+            <p>4.  Chinese people cares relatively less about religion all the time regardless their education levels.</p> 
             <br/>
             <br/>
          </div>
