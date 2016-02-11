@@ -1,3 +1,7 @@
+// ------------------------
+// Set X axis and Y axia
+// ------------------------
+
 // set the stage for the visualization
 var margin = {top: 20, right: 80, bottom: 30, left: 50},
     w = 700 - margin.left - margin.right,
@@ -40,16 +44,20 @@ var yAxis = d3.svg.axis()
     svg.append("svg:g")
     .attr("class", "y axis");
 
+// ------------------------
+// Update data
+// ------------------------
+
 // force data to update when menu is changed    
 var menu = d3.select("#menu select")
 .on("change", change);    
-          
+
 // put data from csv into categories variable
 //run redraw function that will refresh whenever a new data series is selected 
 d3.csv("data.csv", function(csv) {
-    categories = csv;
-        redraw();
-    });
+     categories = csv;
+     redraw();
+});
 
 d3.select(window)
     .on("keydown", function() { altKey = d3.event.altKey; })
@@ -102,7 +110,6 @@ function redraw() {
     // set the x and y domains as the max and min
     // of the related year and statistics, respectively
     x.domain([1, 5]);
-
     y.domain([0, 100]);
 
     // announce to d3 that we will be using something called
@@ -153,11 +160,5 @@ function redraw() {
           
 // that concludes redraw()
 }
-
-// automatically change value after a few seconds
-// var timeout = setTimeout(function() {
-//   menu.property("value", "ENEUSE").node().focus();
-//   change();
-// }, 7000);
 
 // done!
