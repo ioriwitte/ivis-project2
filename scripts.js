@@ -85,11 +85,14 @@ function redraw() {
 
     // get value from menu selection
     // the option values are set in HTML and correspond
-    //to the [yearPeriodCode] value we used to nest the data  
+    //to the [yearPeriodCode] value we used to nest the data 
     var series = menu.property("value");
     
     // only retrieve data from the selected series, using the nest we just created
     var data = nested[series];
+
+    // for late use
+    var stroke_width = data[0].averageLiteracyPercentage * 7 / 100
     
     // for object constancy we will need to set "keys", one for each catetory.
     // the keyring variable contains only the names of the categories
@@ -126,7 +129,6 @@ function redraw() {
     // draw the lines and color them according to their names
     categoryEnter.append("path")
       .attr("fill", "none")
-      .attr('stroke-width', 5)
       .attr("d", function(d) { return line(d.values); })
       .style("stroke", function(d) { return color(d.name); });
 
@@ -145,7 +147,8 @@ function redraw() {
     
     // change values of path to those of the new series
     categoryUpdate.select("path")
-      .attr("d", function(d) { return line(d.values); });
+      .attr("d", function(d) { return line(d.values); })
+      .attr("stroke-width", stroke_width);
     
     // change position of text alongside the moving path  
     categoryUpdate.select("text")
