@@ -92,7 +92,9 @@ function redraw() {
     var data = nested[series];
 
     // for late use
-    var stroke_width = data[0].averageLiteracyPercentage * 7 / 100
+    var average_total_gdp = data[0].averageTotalGDP;
+    var stroke_width = Math.ceil(average_total_gdp / 1500);
+    if(stroke_width<1) stroke_width = 1;
     
     // for object constancy we will need to set "keys", one for each catetory.
     // the keyring variable contains only the names of the categories
