@@ -3,7 +3,7 @@
 // ------------------------
 
 // set the stage for the visualization
-var margin = {top: 50, right: 50, bottom: 50, left: 50},
+var margin = {top: 50, right: 80, bottom: 50, left: 50},
     w = 800 - margin.left - margin.right,
     h = 500 - margin.top - margin.bottom,
     x = d3.scale.linear().range([0, w]),
@@ -13,7 +13,6 @@ var color = d3.scale.category10(); // to generate a different color for each lin
 
 // to be used later
 var categories,
-    filtered,
     transpose;
 
 // where the line gets its properties, how it will be interpolated
