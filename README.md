@@ -4,6 +4,8 @@ This is the Project 2 for Information Visualization course in KTH Royal Institut
 
 The aim of the project is try to visualizing the world through its own worldview with data from World Value Survey by using D3.js.
 
+Here is the running website for this project: http://people.kth.se/~zhihaoy/ivis-project2/index.html
+
 Below is the project requirements.
 
 ____________________________________
