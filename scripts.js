@@ -165,4 +165,59 @@ function redraw() {
 // that concludes redraw()
 }
 
+// ------------------------
+// Light up different lines
+// ------------------------
+function familyLight() {
+    var chkbox = document.getElementById("FML");
+    if (chkbox.checked) {
+        document.getElementById("family").style.cssText = "opacity:1;";
+    } else { 
+        document.getElementById("family").style.cssText = "";
+}};
+
+function friendsLight() {
+    var chkbox = document.getElementById("FRD");
+    if (chkbox.checked) {
+        document.getElementById("friends").style.cssText = "opacity:1;";
+    } else { 
+        document.getElementById("friends").style.cssText = "";
+}};
+
+
+function workLight() {
+    var chkbox = document.getElementById("WK");
+    if (chkbox.checked) {
+        document.getElementById("work").style.cssText = "opacity:1;";
+    } else { 
+        document.getElementById("work").style.cssText = "";
+}};
+
+
+function leisureTimeLight() {
+    var chkbox = document.getElementById("LSTM");
+    if (chkbox.checked) {
+        document.getElementById("leisure time").style.cssText = "opacity:1;";
+    } else { 
+        document.getElementById("leisure time").style.cssText = "";
+}};
+
+
+function politicsLight() {
+    var chkbox = document.getElementById("PLTCS");
+    if (chkbox.checked) {
+        document.getElementById("politics").style.cssText = "opacity:1;";
+    } else { 
+        document.getElementById("politics").style.cssText = "";
+}};
+
+
+function religionLight() {
+    var chkbox = document.getElementById("RLG");
+    if (chkbox.checked) {
+        document.getElementById("religion").style.cssText = "opacity:1;";
+    } else { 
+        document.getElementById("religion").style.cssText = "";
+}};
+
 // done!
